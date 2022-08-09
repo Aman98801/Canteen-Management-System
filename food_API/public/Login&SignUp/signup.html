@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <style>
+        .table {
+            width: 500px;
+            height: 500px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        .table:hover {
+            color: rgb(158, 157, 157);
+            font-weight: bold;
+        }
+
+        .div1 {
+
+
+            width: 500px;
+            height: 550px;
+            border-radius: 15px;
+            position: fixed;
+            margin-left: 400px;
+            margin-top: 50px;
+
+            transition: 2s;
+        }
+
+        body {
+            background: #cc2b5e;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #753a88, #cc2b5e);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+
+
+        h1 {
+            font-size: 24px;
+            color: rgb(255, 255, 255);
+        }
+
+        tr {
+            transition: font-size 1s;
+        }
+
+        .input {
+            height: 20px;
+            width: 200px;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+            transition: height 1s;
+
+        }
+
+        .input:hover {
+            height: 30px;
+            background-color: #454453;
+            /* cursor: pointer; */
+            border: 2px solid white;
+            color: white;
+            font-size: 15px;
+
+        }
+
+        .submit {
+            text-decoration: none;
+            color: black;
+            background-color: rgb(109, 102, 102);
+            display: block;
+            text-align: center;
+            padding: 5px;
+            width: 150px;
+            margin: auto;
+            border-radius: 20px;
+
+        }
+
+        .submit:hover {
+            background-color: rgb(32, 30, 30);
+            color: white;
+        }
+
+        .div1:hover {
+            /* background-color: #28273f; */
+            /* background-image: linear-gradient(315deg, #ebf928 0%, #d425b5 74%); */
+            background: #ff4b1f;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1fddff, #ff4b1f);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1fddff, #ff4b1f);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            border: 4px solid ghostwhite;
+            transition: all;
+            transition-duration: 2s;
+
+
+        }
+
+        .A:hover {
+            color: white;
+            font-size: 20px;
+            transition: all;
+            transition-duration: 2s;
+
+        }
+
+        .A {
+            cursor: pointer;
+            /* color: white; */
+            color: black;
+        }
+
+
+        .div1 {
+            color: white;
+            margin-left: 35%;
+            background-color: aliceblue;
+            border: 3px solid black;
+            margin-top: 6%;
+        }
+
+        input::placeholder {
+            text-align: center;
+            color: black;
+        }
+
+        input[type="submit"] {
+            /* border: 3px solid red; */
+            width: 80px;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 28px;
+            margin-left: 22px;
+        }
+
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #73C8A9 0%, #373B44 51%, #73C8A9 100%)
+        }
+
+        .btn-grad {
+            margin: 10px;
+            /* padding: 15px 45px; */
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <center>
+            <h1 style="color: black;">SIGN UP FORM</h1>
+        </center>
+        <form action="/food_API/public/Login&SignUp/index.html">
+            <table class="table" cellspacing="10px" cellpadding="10px">
+                <tr>
+                    <td><label class="A" for="name">Your Name</label></td>
+                    <td><input id="name" type="text" placeholder="___Enter your name___" required="COMPULSORY"
+                            class="input">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="A" for="username">User_Name</label></td>
+                    <td><input id="username" type="text" class="input" placeholder="___Enter username___" required="">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label class="A" for="rollno">Your RollNo/ FacultyId</label></td>
+                    <td><input id="rollno" type="text" placeholder="__Enter Rollno/ FacultyID__" class="input" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="A" for="mail">Your Email</label></td>
+                    <td><input id="mail" type="email" placeholder="___Enter your email___" required="required"
+                            class="input" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label class="A" for="pass">Your Password</label></td>
+                    <td><input id="pass" type="password" class="input" placeholder="___Can be alphanumeric___"
+                            required="" maxlength="8">
+                    </td>
+                </tr>
+                <tr>
+
+                    <td><a href="/food_API/public/Login&SignUp/index.html" target="_self"><input type="submit"
+                                value="Submit" class="btn-grad"></a>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+    </div>
+</body>
+
+</html>

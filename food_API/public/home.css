@@ -1,0 +1,307 @@
+/*  scroll property */
+html{
+    scroll-behavior: smooth;
+    scroll-behavior: calc(2s);
+}
+
+.home{
+    background-color: rgba(31, 29, 29, 0.986);
+    position: relative;
+    display: flex;
+    height: 50px;
+    border-radius: 10px;
+    opacity: 0.8;
+  }
+
+.homeDesign{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 1150px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.head{
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 3px 3px;
+    font-weight: bold;
+    list-style: none;
+}
+.headElem:hover{
+    color: rgb(19, 151, 7);
+    display: block;
+}
+
+.headElem{
+    color: white;
+    text-decoration: none;
+}
+
+.search{
+    width: 700px;
+    margin-top: 1px;
+}
+#searchElem{
+    background-color: rgb(78, 75, 75);
+    color: white;
+    float: right;
+    width: 300px;
+    border-radius: 10px;
+}
+.img1{
+    float: right;
+    margin-right: 10px;
+}
+
+
+/* ________  Section 0 : Home  __________ */
+
+
+.bigContainer::before{
+    content: " ";
+    background: url('/food_API/public/Images/homeImage.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 78%;
+    opacity: 0.8;
+    z-index: -1;
+}
+.downArrow{
+    width: 50px;
+    height: 50px;
+}
+.discription{
+     /* border: 3px solid red; */
+     width: 500px;
+     display: flex;
+     flex-direction: column;
+     margin-left: 700px;
+     margin-top: 150px;
+     text-align: center;
+}
+
+/* #about{
+   margin-top: 100px;
+} */
+
+/* .heading{
+     margin-top: 150px;
+    font-weight: bold;
+    margin-left: 100px;
+
+} */
+
+
+/* ________  Section 1 : about Us __________ */
+
+
+.heading{
+    margin-left: 280px;
+    margin-top: 105px;
+    padding: 20px 10px;
+    font-family: sans-serif;
+    color: black;
+}
+#about::before{
+    content: " ";
+    background: url('/food_API/public/Images/section1.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 67%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.describe {
+    font-size: 20px;
+    font-weight: bold;
+    width: 650px;
+    line-height: 35px;
+    color: black;
+    text-align:center;
+    margin-left: 30px;
+    font-family: sans-serif;
+    /* background-color: rgb(53, 26, 26); */
+    border-radius: 30px;
+    /* border: 3px solid red; */
+}
+
+
+
+
+/* ________  Section 2 : Menu __________ */
+
+#menu{
+    /* border: 3px solid red; */
+    margin-top: 39px;
+    background-color: black;
+}
+.head1{
+    text-align: center;
+    font-size: 30px;
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.head2{
+    font-size: 40px;
+    color: green;
+    
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.para1{
+    font-size: 20px;
+    color: rgb(17, 221, 153);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.img2 {
+    width: 255px;
+    height: 245px;
+    border-radius: 30px;
+}
+
+.menutype{
+    display: flex;
+    margin: auto;
+}
+.type{
+    width: 33%;
+    margin-left: 70px;
+    margin-top: 15px;
+    
+}
+.internal{
+    padding: 30px 30px;
+}
+.item{
+    color: white;
+    width: 280px;
+    text-align: center;
+}
+.item:hover{
+    color: rgb(19, 187, 209);
+}
+.anchor{
+    text-decoration: none;
+}
+
+/*  info section design  */
+
+.topContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    
+}
+
+.interContainer{
+    font-family: serif;
+    border: 3px solid black;
+    background-color: rgb(77, 73, 73);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.interHead{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(26, 204, 26);
+}
+.interpara{
+    padding: 2px 5px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Footer Setting */
+#contact {
+    background-color: rgba(2, 53, 20, 0.884);
+    margin-top: -22px;
+}
+
+.headFooter{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 100px;
+}
+
+.footerContainer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+}
+
+.follow{
+    margin-top: 70px;
+    color: rgb(228, 192, 186);
+}
+.footerHead{
+    color: rgb(228, 192, 186);
+}
+
+.address{
+    margin-top: 40px;
+    color: rgb(145, 170, 207) 
+}
+.followUs{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    transition: all;
+}
+.followUs li{
+    margin-right: 50px;
+}
+.hours{
+    color: rgb(228, 192, 186);
+}
+.timing p{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(145, 170, 207); 
+}
+
+.followUs li:hover{
+    background-color: rgb(145, 170, 207) ;
+    padding: 4px 6px;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+
+/*  internal list : menu  */
+/* .internal_list{
+    display: none;
+    background-color: rgb(68, 66, 66);
+    width: 60px;
+    height: 55px;
+    margin-top: 20px;
+    border-radius: 20px;
+} */
+/* .interMenu{
+    line-height: 24px;
+    font-size: 15px;
+} */
+
+.breakfastMenu{
+    text-decoration: none;
+    color: white;
+}
+.breakfastMenu:hover{
+    color: rgb(19, 187, 209);
+}
+
